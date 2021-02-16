@@ -1,8 +1,159 @@
+@font-face {
+    font-family: Josefin Sans;
+    src: url(https://fonts.google.com/specimen/Josefin+Sans);
+  }
+  @font-face {
+    font-family: Alata;
+    src: url(https://fonts.google.com/specimen/Alata);
+  } 
+
 main{
     width: 80%;
     margin: auto;
 }
 
+.mainHeader{
+    height: 400px;
+    background-image: url(/desktop/image-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0;
+    margin-bottom: 10%;
+}
+
+.headH1{
+    margin-top: 8%;
+    margin-left: 10%;
+ 
+    position: relative;
+    width: 70%;
+    border: 1px white solid;
+    color: white;
+    font-size: 35px;
+    font-weight: 300;
+    text-align: end left;
+    padding: 5%;
+}
+
+.mainInfoImg{
+    width: 100%;
+}
+
+.mainInfo{
+    text-align: center;
+}
+
+.creationsContainer{
+    display: grid;
+    grid-template-rows: repeat(10, 150px);
+    grid-gap: 10px;
+}
+.creationH2{
+    text-align: center;
+    font-size: 30px;
+    font-family: Alata;
+    width: 100%;
+    margin: auto;
+    grid-row: 1/2;
+
+}
+
+.creationButton{
+    display: none;
+}
+
+.creations{
+    display: flex;
+    color: white;
+    
+}
+.creationH4{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.creation1{
+    grid-row: 2/3;
+    background-image: url(/desktop/image-deep-earth.jpg);
+}
+.creation2{
+    grid-row: 3/4;
+    background-image: url(/desktop/image-night-arcade.jpg);
+}
+.creation3{
+    grid-row: 4/5;
+    background-image: url(/desktop/image-soccer-team.jpg);
+}
+.creation4{
+    grid-row: 5/6;
+    background-image: url(/desktop/image-grid.jpg);
+}
+.creation5{
+    grid-row: 6/7;
+    background-image: url(/desktop/image-from-above.jpg);
+}
+.creation6{
+    grid-row: 7/8;
+    background-image: url(/desktop/image-pocket-borealis.jpg);
+    background-position: center;
+}
+.creation7{
+    grid-row: 8/9;
+    background-image: url(/desktop/image-curiosity.jpg);
+}
+.creation8{
+    grid-row: 9/10;
+    background-image: url(/desktop/image-fisheye.jpg);
+    background-position: center;
+}
+.smallScreenButton{
+    grid-row: 10/11;
+    
+}
+.creationButtonSmall{
+    width: 60%;
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 20%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.mainFooter{
+    background-color: black;
+    display: grid;
+    grid-template-rows: 20% 60% 10% 10%;
+    height: 300px;
+}
+
+.footerName{
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 25px;
+    margin-right: 5px;
+    margin: auto;
+    grid-row: 1/2;
+}
+.footerLinkGroups{
+    grid-row: 2/3;
+    margin: auto;
+    color: white;
+}
+.footerLinks{
+    color: white;
+    margin-bottom: 3px;
+}
+
+.socialLinks{
+    grid-row: 3/4;
+    margin: auto;
+}
+.footerCopy{
+    grid-row: 4/5;
+    color: white;
+    margin: auto;
+}
 
 
 @media(min-width:1000px){
@@ -169,4 +320,13 @@ main{
         grid-column: 1/2;
     }
     
+    .socialLinks{
+        margin-left: 65%;
+        padding-top: 2%;
+    }
+    .footerCopy{
+        margin-left:40%;
+    }
+
+
 }
